@@ -1,3 +1,6 @@
+import 'dart:ffi';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,36 +21,235 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-        backgroundColor: Colors.blue,
-        appBar: AppBar(backgroundColor: Colors.red),
+        backgroundColor: Colors.white,
+        appBar: AppBar(
+            backgroundColor: Colors.red,
+            title: Text("hello"),
+            titleTextStyle: const TextStyle(color: Colors.blue),
+            centerTitle: true),
         drawer: const Drawer(),
         body: Container(
-          margin: const EdgeInsets.fromLTRB(100, 20, 50, 10),
-          padding: const EdgeInsets.fromLTRB(100, 50, 71, 20),
-          width: 500,
-          height: 200,
-          decoration: BoxDecoration(
-              image: const DecorationImage(
-                image: NetworkImage(
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqs0biBOHTjxj0u0RUOc-GFEqyoWTAVexJfwMYxnQGjQitaNJqOuP_AOfRA9xNwv3S7L4&usqp=CAU"),
-                fit: BoxFit.fill,
-              ),
-              border: Border.all(color: Colors.black, width: 3),
-              borderRadius: const BorderRadius.horizontal(
-                  right: Radius.circular(10), left: Radius.circular(10))),
-          child: const Text(
-            "How are You",
-            style: TextStyle(
-                color: Colors.blue,
-                fontWeight: FontWeight.bold,
-                shadows: [
-                  Shadow(
-                      color: Colors.black,
-                      offset: Offset(0, 2),
-                      blurRadius: 10.0)
-                ]),
+            child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Card(
+                  margin: EdgeInsets.only(top: 20, right: 20, left: 20),
+                  color: Colors.white,
+                  shadowColor: Colors.black,
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.red, width: 1)),
+                  child: Container(
+                    height: 500,
+                    child: Column(
+                      children: [
+                        Container(
+                          width: 500,
+                          height: 100,
+                          padding: EdgeInsets.only(top: 20),
+                          child: const Text(
+                            "بسم الله الرحمن الرحيم",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      color: Colors.red,
+                                      offset: Offset(0, 10),
+                                      blurRadius: 30)
+                                ]),
+                          ),
+                        ),
+                        Container(
+                          width: 500,
+                          height: 100,
+                          padding: EdgeInsets.only(top: 20),
+                          child: const Text(
+                            "بسم الله الرحمن الرحيم",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      color: Colors.red,
+                                      offset: Offset(0, 10),
+                                      blurRadius: 30)
+                                ]),
+                          ),
+                        ),
+                        Container(
+                          width: 500,
+                          height: 100,
+                          padding: EdgeInsets.only(top: 20),
+                          child: const Text(
+                            "بسم الله الرحمن الرحيم",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      color: Colors.red,
+                                      offset: Offset(0, 10),
+                                      blurRadius: 30)
+                                ]),
+                          ),
+                        ),
+                        Container(
+                          width: 500,
+                          height: 100,
+                          padding: EdgeInsets.only(top: 20),
+                          child: const Text(
+                            "بسم الله الرحمن الرحيم",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      color: Colors.red,
+                                      offset: Offset(0, 10),
+                                      blurRadius: 30)
+                                ]),
+                          ),
+                        ),
+                        Container(
+                          width: 500,
+                          height: 100,
+                          padding: EdgeInsets.only(top: 20),
+                          child: const Text(
+                            "بسم الله الرحمن الرحيم",
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40,
+                                shadows: <Shadow>[
+                                  Shadow(
+                                      color: Colors.red,
+                                      offset: Offset(0, 10),
+                                      blurRadius: 30)
+                                ]),
+                          ),
+                        )
+                      ],
+                    ),
+                  )),
+              Card(
+                  margin: EdgeInsets.only(top: 20, right: 20, left: 20),
+                  color: Colors.white,
+                  shadowColor: Colors.black,
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.red, width: 1)),
+                  child: Column(
+                    children: [
+                      Container(
+                        width: 500,
+                        height: 200,
+                        padding: EdgeInsets.only(top: 20),
+                        child: const Text(
+                          "بسم الله الرحمن الرحيم",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 40,
+                              shadows: <Shadow>[
+                                Shadow(
+                                    color: Colors.red,
+                                    offset: Offset(0, 10),
+                                    blurRadius: 30)
+                              ]),
+                        ),
+                      ),
+                      Container(
+                        width: 500,
+                        height: 200,
+                        padding: EdgeInsets.only(top: 10),
+                        child: const Text(
+                          "بسم الله الرحمن الرحيم",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 40,
+                              shadows: <Shadow>[
+                                Shadow(
+                                    color: Colors.red,
+                                    offset: Offset(0, 10),
+                                    blurRadius: 30)
+                              ]),
+                        ),
+                      )
+                    ],
+                  )),
+              Card(
+                  margin: EdgeInsets.only(top: 20, right: 20, left: 20),
+                  color: Colors.white,
+                  shadowColor: Colors.black,
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.red, width: 1)),
+                  child: Container(
+                    width: 500,
+                    height: 200,
+                    padding: EdgeInsets.only(top: 20),
+                    child: const Text(
+                      "بسم الله الرحمن الرحيم",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40,
+                          shadows: <Shadow>[
+                            Shadow(
+                                color: Colors.red,
+                                offset: Offset(0, 10),
+                                blurRadius: 30)
+                          ]),
+                    ),
+                  )),
+              Card(
+                  margin:
+                      EdgeInsets.only(top: 20, right: 20, left: 20, bottom: 20),
+                  color: Colors.white,
+                  shadowColor: Colors.black,
+                  elevation: 5,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20),
+                      side: BorderSide(color: Colors.red, width: 1)),
+                  child: Container(
+                    width: 500,
+                    height: 200,
+                    padding: EdgeInsets.only(top: 20),
+                    child: const Text(
+                      "بسم الله الرحمن الرحيم",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 40,
+                          shadows: <Shadow>[
+                            Shadow(
+                                color: Colors.red,
+                                offset: Offset(0, 10),
+                                blurRadius: 30)
+                          ]),
+                    ),
+                  )),
+            ],
           ),
-        ));
+        )));
   }
 }
 
