@@ -107,6 +107,7 @@ class HomePage extends StatelessWidget {
                         margin:
                             const EdgeInsets.only(top: 2, right: 8, left: 8),
                         child: TextField(
+                          style: const TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 15),
                           maxLength: 50,
                           maxLines: 1,
                           decoration: InputDecoration(
