@@ -31,17 +31,22 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_svg: ^1.1.6
+  lottie: ^2.0.0
+  percent_indicator: ^4.2.2
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   fl_country_code_picker: ^0.0.1
   country_picker: ^2.0.16
+  readmore: ^2.1.0
   flutter_localizations:
     sdk: flutter
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
 
 
 
@@ -52,8 +57,7 @@ dev_dependencies:
   # rules and activating additional ones.
   flutter_lints: ^2.0.0
 
-dependency_overrides:
-  intl: ^0.17.0
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -74,6 +78,17 @@ flutter:
     - images/notification.jpeg
     - images/inest.jpeg
     - images/twit.jpeg
+    - images/backBtu.svg
+    - images/resume.svg
+    - images/reload.svg
+    - images/arrowleft.svg
+    - images/arrowRight.svg
+    - images/background.svg
+    - images/true.svg
+    - assets/smaileface.json
+    - assets/smail.json
+    - assets/congrats.json
+    - assets/done.json
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -87,17 +102,10 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: fonts/NotoSansArabicSemiBold.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
