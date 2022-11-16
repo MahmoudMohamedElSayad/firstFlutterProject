@@ -237,6 +237,9 @@ class StateResultPage extends State<ResultPage> {
                                 }),
                           ),
                           Padding(padding: EdgeInsets.only(top: 40),child: GestureDetector(
+                            onTap: (){
+                              Navigator.of(context).pushNamed("sliderPage");
+                            },
                             child: Container(
                               alignment: Alignment.center,
                               width: double.infinity,
