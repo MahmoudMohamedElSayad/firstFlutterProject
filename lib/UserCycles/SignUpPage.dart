@@ -9,7 +9,7 @@ class SignUpPage extends StatefulWidget {
 }
 
 class StateSignUpPage extends State<SignUpPage> {
-  bool hide = true,hideConfirm=true;
+  bool hide = true, hideConfirm = true;
 
   @override
   Widget build(BuildContext context) {
@@ -60,9 +60,11 @@ class StateSignUpPage extends State<SignUpPage> {
                             child: Column(
                               children: [
                                 TextFormField(
+                                  style: TextStyle(fontFamily: "NotoSans",fontSize: 15),
                                   keyboardType: TextInputType.text,
                                   decoration: InputDecoration(
-                                      prefixIcon: Padding(
+                                      prefixIcon:
+                                      Padding(
                                         padding: EdgeInsets.symmetric(
                                             horizontal: 10, vertical: 10),
                                         child: SvgPicture.asset(
@@ -88,7 +90,8 @@ class StateSignUpPage extends State<SignUpPage> {
                                   child: TextFormField(
                                     keyboardType: TextInputType.text,
                                     decoration: InputDecoration(
-                                        prefixIcon: Padding(
+                                        prefixIcon:
+                                        Padding(
                                           padding: EdgeInsets.symmetric(
                                               horizontal: 10, vertical: 10),
                                           child: SvgPicture.asset(
@@ -178,7 +181,8 @@ class StateSignUpPage extends State<SignUpPage> {
                                                   ),
                                                 ),
                                         ),
-                                        prefixIcon: Padding(
+                                        prefixIcon:
+                                        Padding(
                                           padding: EdgeInsets.symmetric(
                                               horizontal: 15, vertical: 15),
                                           child: SvgPicture.asset(
@@ -203,12 +207,10 @@ class StateSignUpPage extends State<SignUpPage> {
                                 Padding(
                                   padding: EdgeInsets.only(top: 15),
                                   child: TextFormField(
-
                                     obscureText: hideConfirm,
                                     keyboardType: TextInputType.visiblePassword,
                                     decoration: InputDecoration(
-                                        suffixIcon:
-                                        GestureDetector(
+                                        suffixIcon: GestureDetector(
                                           onTap: () {
                                             setState(() {
                                               if (hideConfirm) {
@@ -220,27 +222,27 @@ class StateSignUpPage extends State<SignUpPage> {
                                           },
                                           child: hideConfirm
                                               ? Padding(
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 15,
-                                                vertical: 15),
-                                            child: SvgPicture.asset(
-                                              width: 24,
-                                              height: 24,
-                                              fit: BoxFit.fill,
-                                              'images/hidden.svg',
-                                            ),
-                                          )
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 15,
+                                                      vertical: 15),
+                                                  child: SvgPicture.asset(
+                                                    width: 24,
+                                                    height: 24,
+                                                    fit: BoxFit.fill,
+                                                    'images/hidden.svg',
+                                                  ),
+                                                )
                                               : Padding(
-                                            padding: EdgeInsets.symmetric(
-                                                horizontal: 15,
-                                                vertical: 15),
-                                            child: SvgPicture.asset(
-                                              width: 24,
-                                              height: 24,
-                                              fit: BoxFit.fill,
-                                              'images/eye.svg',
-                                            ),
-                                          ),
+                                                  padding: EdgeInsets.symmetric(
+                                                      horizontal: 15,
+                                                      vertical: 15),
+                                                  child: SvgPicture.asset(
+                                                    width: 24,
+                                                    height: 24,
+                                                    fit: BoxFit.fill,
+                                                    'images/eye.svg',
+                                                  ),
+                                                ),
                                         ),
                                         prefixIcon: Padding(
                                           padding: EdgeInsets.symmetric(
@@ -304,6 +306,9 @@ class StateSignUpPage extends State<SignUpPage> {
                                       Padding(
                                           padding: EdgeInsets.only(right: 8)),
                                       GestureDetector(
+                                        onTap: (){
+                                          Navigator.of(context).pushNamed("homePage");
+                                        },
                                         child: Text(
                                           "تسجيل الدخول",
                                           style: TextStyle(

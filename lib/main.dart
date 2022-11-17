@@ -6,6 +6,7 @@ import 'package:untitled/SliderPage.dart';
 import 'package:untitled/UserCycles/LoginPage.dart';
 import 'package:untitled/UserCycles/SignUpPage.dart';
 
+import 'HomeCycle/MyNotesPage.dart';
 import 'ResultPage.dart';
 
 void main() {
@@ -63,8 +64,9 @@ class HomePage extends StatelessWidget {
         "ResultPage": (context) {
           return ResultPage();
         },
-        "sliderPage": (context) => SliderPage(),
-        "homePage": (context) => HomePages()
+
+        "homePage": (context) => HomePages(),
+        "MyNotesPage":(context)=>MyNotesPage()
       },
     );
   }
