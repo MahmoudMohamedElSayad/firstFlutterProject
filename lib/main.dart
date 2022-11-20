@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
         focusColor: Colors.green,
         appBarTheme: AppBarTheme(
             systemOverlayStyle: const SystemUiOverlayStyle(
-          statusBarColor: Color(0xff2E6934),
+          statusBarColor: Color(0xff18532C),
           statusBarIconBrightness: Brightness.light,
         )),
       ),
